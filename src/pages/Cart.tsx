@@ -14,16 +14,18 @@ const Cart = () => {
 
   if (cartItems.length === 0) {
     return (
-      <div className="bg-gray-50 flex justify-center items-center w-full min-h-screen">
+      <div className="bg-gray-50 flex justify-center items-center w-full">
         <EmptyCart />
       </div>
     )
   }
 
   return (
-    <div className="bg-gray-50 flex justify-center items-center w-full min-h-screen">
+    <div className="bg-gray-50 flex w-full">
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">Your Cart</h1>
+        <h1 className="text-xl font-semibold text-gray-800 mb-6">
+          Your Cart Items
+        </h1>
         <div className="space-y-4">
           {cartItems.map((item) => (
             <CartItem
