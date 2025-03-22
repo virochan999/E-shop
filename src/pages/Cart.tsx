@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 import { RootState } from "../store/store"
-import CartItem from "../components/molecules/cartItem"
+import CartItem from "../components/molecules/CartItem"
 import CartSummary from "../components/organisms/CartSummary"
 import EmptyCart from "../components/organisms/EmptyCart"
 
